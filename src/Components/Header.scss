@@ -1,0 +1,58 @@
+.bg-indigo-800{
+    --tw-bg-opacity: 0.8 !important;
+    background-color: rgb(32 32 32  / var(--tw-bg-opacity)) !important;
+}
+
+
+.logo{
+    width: 100px;
+    // margin-left: 40px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    // background-color: #000;
+
+   
+
+    >ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around ;
+        width: 900px;
+        >li{
+            display: flex;
+            // width: 200px;
+            padding: 5px;
+            align-items: center;
+            >a{
+                display: flex;
+                align-items: center;
+                >h4{
+                    margin: 5px;
+                    color: rgb(24, 22, 22);
+                }
+            }
+            
+        }
+    }
+}
+
+
+.icons{
+    width: 30px;
+    height: 30px;
+}
+
+
+h4{
+    font-family:  Arvo;
+    font-weight: 600;
+    // color:#555
+}
+a{
+    text-decoration: none;
+}

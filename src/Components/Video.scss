@@ -1,0 +1,39 @@
+.h2{
+    font-family: 'Lato', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+}
+.h2:before, .row:after {
+    content: "";
+    display: table;
+}
+.h2:after {
+    clear: both;
+}
+
+.h2:before, .h2:after {
+    content: "";
+    display: table;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgba(33,81,197,1);
+    content: " ";
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+
+.video{
+    margin-top: 40px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    width:360px;
+    height:215px;
+    // margin-left: 890px;
+}
