@@ -23,9 +23,7 @@ const Howitworks = () => {
         <div className="md:ml-auto md:w-1/2 md:pl-10">
           <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">ჰიდროდინამიკური  საწმენდი მანქანა</p>
           <p className="mt-3 text-lg text-gray-300">
-          ძალიან მსუბუქი, კომპაქტური და მოხერხებული მანქანა: იდეალურია კანალიზაციის
-მილებში საცობების გასაწმენდად სველ წერტილებში (ნიჟარები, ტუალეტები,
-სამზარეულოები, სასადილო ოთახები)
+          კანალიზაციის ქსელის შეკეთება-გაწმენდა მსუბუქი, კომპაქტური და მოხერხებული მანქანით: იდეალურია კანალიზაციის მილებსა და სველ ცერტილებში საცობების გასაწმენდად  
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">

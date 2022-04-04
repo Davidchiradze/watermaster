@@ -4,7 +4,7 @@ const Video = () => {
   return (
     <section>
       <h2 className=" text-4xl h2">ვიდეო მასალა</h2>
-      <div>
+      <div className="video-div">
         <iframe
           className="video"
 
