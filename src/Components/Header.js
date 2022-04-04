@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Header.scss'
 import mainphoto from '../assets/mainphoto.jpg'
 import logo from '../assets/logo.jpg'
@@ -6,10 +6,23 @@ import email from '../assets/email.png'
 import phonenumber from '../assets/phonenumber.png'
 import facebook from '../assets/facebook.png'
 import location from '../assets/location.png'
-
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 
 const Header = () => {
+
+  const [dropDownIsValid, setDropDownIsValid] = useState(false);
+  const [iconName,setIconName] = useState("menu-outline")
+
+    const handleDropDown=()=>{
+      setDropDownIsValid(prev=>!prev);
+      if(iconName==="menu-outline"){
+
+        setIconName("close-outline")
+      }else {
+        setIconName("menu-outline");
+      }
+    }
   return (
 
     <React.Fragment>
@@ -18,7 +31,41 @@ const Header = () => {
             <div className='navigation'>
 
           <img src={logo} alt="logo" className='logo'/>
-          <ul>
+         {dropDownIsValid && <div className='mobile-nav'>
+<ul>
+<li>
+              <a href="mailto:Watermaster176@gmail.com">
+              <img src={email} className="icons"/>
+              <h4>Watermaster176@gmail.com</h4>
+              </a>
+
+            </li>
+            <li>
+            <a href="tel:+995591276176">
+            <img src={phonenumber} className="icons"/>
+            <h4>+995 591 276 176</h4>
+            </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/watermaster.ge">
+            <img src={facebook} className="icons"/>
+            <h4>Water Master </h4> 
+            </a>
+            </li>
+            <li>
+              <a href="">
+                 <img src={location} className="icons"/>
+            <h4>Kutaisi,Georgia</h4>
+              </a>
+           
+            </li>
+</ul>
+          
+
+          </div>
+}
+          <ion-icon onClick={handleDropDown} size="large" name={`${iconName}`}></ion-icon>
+          <ul className='navigation-ul'>
             <li>
               <a href="mailto:Watermaster176@gmail.com">
               <img src={email} className="icons"/>

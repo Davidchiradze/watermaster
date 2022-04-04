@@ -55,11 +55,16 @@
     text-rendering: optimizeLegibility;
     margin-left:20px;
     color:#fff
+    
 }
 .footer-top{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 800px){
+    display: flex;
+    flex-direction: column;
+    }
 }
 .footer-bottom{
     display: flex;
@@ -68,5 +73,22 @@
 
 >p{
     color:#fff
+    
 }
+
+
+}
+
+.footer-bottom p{
+     @media screen and (max-width: 800px){
+     font-size: 75%;
+    }
+
+}
+
+
+.footer-nav li a{
+    @media screen and (max-width: 800px){
+                font-size: 75%;
+    }
 }
